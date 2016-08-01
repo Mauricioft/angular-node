@@ -1,0 +1,15 @@
+<form ng-submit="toWrite()">
+	<div class="form-group">
+		<textarea class="form-control" rows="3"
+			id="twittear" 
+			name="twittear" 
+			ng-model="twittear"></textarea>
+  	</div>
+  	<button class="btn btn-primary btn-md">Accept</button>
+</form>
+
+<div ng-repeat="response in objResponse">
+	<blockquote>
+  		<p>{{ response }}</p>
+	</blockquote>
+</div>
